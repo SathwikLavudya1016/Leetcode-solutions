@@ -4,7 +4,8 @@ class Solution {
         int res = 0;
         for(char ch : s.toCharArray()){
             map.put(ch, map.getOrDefault(ch,0)+1);
-            if(map.get(ch) % 2 == 0){
+            if(map.get(ch) % 2 == 0)
+            {
             res += 2;
             }
         }
